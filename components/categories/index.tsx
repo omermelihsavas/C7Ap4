@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
+import Image from 'next/image';
 
 function Categories() {
     interface Category {
@@ -140,8 +141,8 @@ function Categories() {
                             {books.slice(0, 4).map((book) => (
                                 <div className='mt-5 flex gap-5' key={book.id}>
                                     <div className='flex gap-5 w-80 h-[200px] bg-[#f4f4ff] rounded p-[10px]'>
-                                        <img src="/book.png" alt="book" />
-                                            <div className='flex flex-col relative'>
+                                        <Image src="/book.png" alt="book" width={124} height={180} />
+                                        <div className='flex flex-col relative'>
                                             <div>
                                                 <h3 className='text-xl text-[#090937] font-semibold'>{book.name}</h3>
                                                 <p className='text-base text-[#090937] text-opacity-60 font-semibold'>{book.author}</p>
@@ -169,7 +170,7 @@ function Categories() {
                             {books2.slice(0, 4).map((book) => (
                                 <div className='mt-5 flex gap-5' key={book.id}>
                                     <div className='flex gap-5 w-80 h-[200px] bg-[#f4f4ff] rounded p-[10px]'>
-                                        <img src="/book.png" alt="book.png" />
+                                        <Image src="/book.png" alt="book" width={124} height={180} />
 
                                         <div className='flex flex-col relative'>
                                             <div>
@@ -199,7 +200,7 @@ function Categories() {
                             {books3.slice(0, 4).map((book) => (
                                 <div className='mt-5 flex gap-5' key={book.id}>
                                     <div className='flex gap-5 w-80 h-[200px] bg-[#f4f4ff] rounded p-[10px]'>
-                                        <img src="/book.png" alt="book.png" />
+                                        <Image src="/book.png" alt="book" width={124} height={180} />
 
                                         <div className='flex flex-col relative'>
                                             <div>
@@ -229,7 +230,7 @@ function Categories() {
                             {books4.slice(0, 4).map((book) => (
                                 <div className='mt-5 flex gap-5' key={book.id}>
                                     <div className='flex gap-5 w-80 h-[200px] bg-[#f4f4ff] rounded p-[10px]'>
-                                        <img src="/book.png" alt="book.png" />
+                                        <Image src="/book.png" alt="book" width={124} height={180} />
 
                                         <div className='flex flex-col relative'>
                                             <div>

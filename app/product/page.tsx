@@ -3,6 +3,7 @@
 import Navbar from '@/components/navbar'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 function Product() {
     interface Category {
@@ -91,7 +92,7 @@ function Product() {
                         <div className='flex justify-between'>
                             <div className="flex items-center gap-[10px]">
                                 <Link href="/category" className='w-5 h-5'>
-                                    <img src="/vector.png" alt="vector" />
+                                    <Image src="/vector.png" alt="vector" width={10} height={17} />
                                 </Link>
 
 
@@ -103,7 +104,7 @@ function Product() {
                                 className={following==="true" ? 'w-11 h-11 rounded-full bg-[#F4F4FF] flex items-center justify-center' : 'w-11 h-11 rounded-full flex items-center justify-center bg-blue-200'}
                                 onClick={handleFollow}
                             >
-                                    <img src="/heartbutton.png" alt="heartbutton" />
+                                    <Image src="/heartbutton.png" alt="heartbutton"  width={25} height={23}/>
                             </button>
                         </div>
                     </div>
@@ -111,7 +112,7 @@ function Product() {
                     {books.slice(0, 1).map((book) => (
                         <>
                             <div className='flex gap-20' key={book.id}>
-                                <img src="/bigbook.png" alt="" />
+                                <Image src="/bigbook.png" alt="book" width={316} height={466} />
 
                                 <div className='flex flex-col'>
                                     <div className='flex flex-col gap-[10px]'>

@@ -3,6 +3,7 @@
 import Navbar from '@/components/navbar'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 function Category() {
   interface Book {
@@ -52,7 +53,7 @@ function Category() {
 
         <div className="flex items-center gap-[10px]">
           <Link href="/home" className='w-5 h-5'>
-            <img src="/vector.png" alt="vector" />
+            <Image src="/vector.png" alt="vector" width={10} height={17} />
           </Link>
 
           <h2 className='text-2xl font-bold'>Best Seller</h2>
@@ -61,7 +62,9 @@ function Category() {
         <div className='my-8 gap-10 flex flex-wrap justify-center'>
 
           <Link href="product" className='bg-[#F4F4FF] w-[300px] h-[433px]  rounded border-[1px] border-solid border-[#090937] border-opacity-10'>
-            <img src="/bookpicture.png" alt="bookpicture" className='object-cover py-5 px-[50px]' />
+            <div className='py-5 px-[50px]'>
+              <Image src="/bookpicture.png" alt="bookpicture" className='object-cover ' width={198} height={290} />
+            </div>
 
             <div className='flex mx-5 justify-between my-[10px] relative'>
               <div className='flex flex-col'>
@@ -75,7 +78,9 @@ function Category() {
 
           {books.slice(1).map((book) => (
             <div className='bg-[#F4F4FF] w-[300px] h-[433px]  rounded border-[1px] border-solid border-[#090937] border-opacity-10'>
-              <img src="/bookpicture.png" alt="bookpicture" className='object-cover py-5 px-[50px]' />
+              <div className='py-5 px-[50px]'>
+                <Image src="/bookpicture.png" alt="bookpicture" className='object-cover ' width={198} height={290} />
+              </div>
 
               <div className='flex mx-5 justify-between my-[10px] relative'>
                 <div className='flex flex-col'>

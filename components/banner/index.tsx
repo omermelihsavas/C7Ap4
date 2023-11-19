@@ -1,10 +1,12 @@
+"use client"
 import React from 'react'
+import Image from 'next/image'
 
 function Banner() {
     return (
         <>
             <div className='my-10 mx-[60px] h-[400px] rounded-lg flex items-center'>
-                <img className='w-full object-cover' src="/banner.png" alt="banner" />
+                <Image className='w-full object-cover' src="/banner.png" alt="banner" width={1399} height={424}/>
                 <p className='absolute py-[86px] pl-[60px] text-[56px] font-extrabold text-white'>
                     <span className='text-[#f0b861]'>25% discount</span> <br />
                     all Paulo Coelho <br /> books!

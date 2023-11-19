@@ -1,11 +1,13 @@
 import React from 'react'
 import Form from '@/components/form';
-
+import Image from 'next/image';
 function LoginRegister() {
     return (
         <div className='flex w-full h-screen'>
             <div className='w-1/2 h-full overflow-hidden'>
-                <img
+                <Image
+                    width={735}
+                    height={735}
                     src="/picture.png"
                     alt="picture"
                     className='w-full h-full object-fill'
@@ -15,7 +17,7 @@ function LoginRegister() {
             <div className='w-1/2 h-full bg-white'>
                 <div className='py-10 w-[400px] mx-auto'>
                     <div className="flex items-center justify-center">
-                        <img src="/logo.png" alt="logo" />
+                        <Image width={120} height={78} src="/logo.png" alt="logo" />
                     </div>
 
                     <div className='mt-10 mb-5'>
