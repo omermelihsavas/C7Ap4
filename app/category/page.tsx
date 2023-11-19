@@ -77,7 +77,7 @@ function Category() {
           </Link>
 
           {books.slice(1).map((book) => (
-            <div className='bg-[#F4F4FF] w-[300px] h-[433px]  rounded border-[1px] border-solid border-[#090937] border-opacity-10'>
+            <div key={book.id} className='bg-[#F4F4FF] w-[300px] h-[433px]  rounded border-[1px] border-solid border-[#090937] border-opacity-10'>
               <div className='py-5 px-[50px]'>
                 <Image src="/bookpicture.png" alt="bookpicture" className='object-cover ' width={198} height={290} />
               </div>
